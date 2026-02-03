@@ -1,0 +1,20 @@
+main ol {
+    color: rgb(1, 1, 112);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background: gray;
+}
+header h1 {
+    color: rgb(47, 15, 97);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+
+header p {
+    color: rgb(15, 2, 2);
+    background-color: rgb(17, 103, 157);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+}
