@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-image: url(Peaceful\ ocean\ from\ one\ piece.jpg);
+    background-repeat: repeat;
+    background-color: skyblue;*/
+    background: url(Peaceful\ ocean\ from\ one\ piece.jpg) repeat blue;
+    color: azure;
+
+}
+
+.decorative {
+    min-height: 80px;
+    /*background-image: url(pngegg.png);
+    background-repeat: no-repeat;
+    background-position: top right;*/
+    background: url(pngegg.png) no-repeat top right;
+    
+}
+
+.pngegg{
+    width: 500px;
+    height: 800px;
+}
+.mylist{
+   /*list-style:none ;*/
+    list-style-image: url(chopper.png);
+}   
+#second{
+    color: azure;
+}
