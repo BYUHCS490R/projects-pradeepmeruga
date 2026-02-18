@@ -1,0 +1,25 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+    background-color: rgba(0, 160, 160, 0.495);
+    padding: 50px 100px 150px 200px;/* top right bottom left*/
+}
+main {
+    background-color: rgb(218, 163, 92);
+}
+footer {
+    background-color: rgba(23, 23, 23, 0.199);
+    border: 10px dashed aliceblue;
+    /*border-width: 10px;
+    border-color: aliceblue;
+    border-style: dashed;*/
+}
+.minipicture {
+    background-color: rgba(123, 20, 20, 0.58);
+    width: 500px;
+    margin: 50px 80px; /*top/bottom right/left*/
+}
+.minipicture img {
+    width: 500px;
+}
