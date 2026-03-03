@@ -63,7 +63,7 @@ main h3{
 }
 
 .card img {
-    width: 100%;
+    width: 150px;
     max-height: 150px;
     object-fit: contain;
     background: white;
