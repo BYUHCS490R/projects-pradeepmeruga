@@ -63,11 +63,9 @@ main h3{
 }
 
 .card img {
+    width: 100%;
+    height: auto;
     display: block;
-    margin: 0px ;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
 }
 
 .card h3 {
