@@ -3,8 +3,7 @@ body {
     margin: 0;
     margin-top: 80px;
 }
-header{
-   
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -65,8 +64,53 @@ nav a:hover{
     width: 100%;
 }
 
+.sidebar {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    gap: 10px;  
+}
+
+.main-row {
+    flex-direction: column-reverse;
+
+}
 footer{
     color: crimson;   
+}
+
+@media ONLY screen AND (max-width: 600px ) {
+    body {
+        background-color: rgb(19, 105, 105);
+        color: white;
+    }
+    header h1 { 
+        background-color: rgba(9, 75, 79, 0.797);
+    }
+    nav {
+        display: none;
+    }
+    nav a {
+        border-bottom: thin solid #fff
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        width: 100px;
+    }
+    .row {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+    .card { 
+        width: 95%;
+    }
+    .main-card {
+        order: -1;
+    }
+
 }
 
 @media  print {
@@ -76,4 +120,23 @@ footer{
     nav {
         display: none;
     }
+    nav a {
+        border-bottom: thin solid #fff
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        width: 100px;
+    }
+    .row {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+    .card { 
+        width: 15%;
+    }
+
 }
