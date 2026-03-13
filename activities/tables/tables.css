@@ -1,3 +1,36 @@
 body {
     font-family: cursive;
 }
+
+.schedule {
+   /* border: 1px solid #000;*/
+    caption-side: bottom;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.schedule thead, .schedule tfoot {
+    background-color: aquamarine;
+    color: black;
+}
+
+.schedule td{
+    border-bottom: 1px solid lightgray;
+    vertical-align: center;
+}
+
+.schedule tbody tr:nth-of-type(odd) {
+    background-color: antiquewhite;
+}
+
+.intro:first-letter {
+    font-size: large;
+    color: red;
+    font-weight: bold;
+}
+
+/*.schedule td, .schedule th {
+    padding: 5px;
+    border: 1px solid #000;
+}*/

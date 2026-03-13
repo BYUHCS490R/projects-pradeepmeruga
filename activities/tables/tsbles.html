@@ -12,7 +12,8 @@
     </header>
     <main>
         <h2>Class Schedule</h2>
-        <table border="1">
+        <p class="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex atque provident quod nam molestias labore magnam tempore, autem quisquam perspiciatis doloremque expedita. Quo laudantium minus inventore asperiores sed illum libero?</p>
+        <table class="schedule">
             <caption>Class Schedule</caption>
             <thead>
                 <tr>
@@ -24,7 +25,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr >
                     <td>It 240</td>
                     <td rowspan="2">Web Design</td>
                     <td>MWF 11AM</td>
@@ -73,6 +74,12 @@
             <li>We use a table to show data in rows and columns, like schedules or grades.</li>
             <li> We do not use tables to design the page layout. We use CSS like Flexbox or Grid for that.</li>
             <li>We do extra work when the table has headers or complex information, so screen readers can understand it.</li>
+        </ol>
+        <h2>Engagement - Table CSS</h2>
+        <ol type="1">
+            <li>We dont use the border attribute because we use CSS for styling. It keeps the HTML clean and easier to manage.</li>
+            <li>The easiest way is using CSS nth-child to color every second row. It makes the table easier to read.</li>
+
         </ol>
     </main>
     <footer>
