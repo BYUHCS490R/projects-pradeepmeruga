@@ -70,6 +70,6 @@ tr:nth-child(even) {
 footer {
   background-color: #000000;
   color: white;
-  text-align: center;
+  text-align: left;
   padding: 15px;
 }
