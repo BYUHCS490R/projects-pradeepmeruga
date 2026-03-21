@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep Web</title>
+</head>
+<body>
+
+<main>
+    <h1>Pradeep Web</h1>
+
+    <form action="formprocs.html" method="post">
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="fullname">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="pradeep@email.com">
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="pass">
+        </div>
+
+        <div>
+            <label for="state">State:</label>
+            <select name="state" id="state">
+                <option value="">----</option>
+                <option value="CA">California</option>
+                <option value="HI">Hawaii</option>
+                <option value="UT">Utah</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">other</label>
+        </div>
+
+        <div>
+            <input type="submit" value="Sign Up">
+        </div>
+        <h2> Engagement - Form</h2>
+        <ol>
+            <li>It tells the browser where to send the form after you click submit.</li>
+            <li>It tells the browser how to send the data (which way to use).</li>
+            <li> GET sends data in the URL, so you can see it. It is used for simple data. POST sends data in the background, so you cannot see it. It is used for important data like passwords.</li>
+        </ol>
+
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Pradeep Meruga</p>
+</footer>
+
+</body>
+</html>
