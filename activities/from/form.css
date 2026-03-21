@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fore-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.fore-row label {
+    width: 150px;
+    text-align: right;
+}
+ 
+.spacer {
+    width: 90px;
+    text-align: right;
+}
+
+input:not([type='submit']), select, textarea {
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: beige;
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus {
+    background-color: white;
+}
+
+input[type='submit'] {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgba(200, 200, 200, 0.5);
+}
+
+fieldset {
+    box-shadow: 5px 5px 3px rgba(200, 200, 200, 0.5);
+}
+
+legend {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .fore-row, .check-row {
+        flex-direction: column;
+    }
+
+    .fore-row label {
+        text-align: left;
+    }
+
+    .spacer {
+        text-align: left;
+    }
+}
