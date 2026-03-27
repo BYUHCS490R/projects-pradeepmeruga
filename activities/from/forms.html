@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+
+<header>
+    <h1>Israel web Design</h1>
+</header>
+
+<main>
+
+    <form action="forms.html" method="get" id="myForm">
+
+        <fieldset>
+            <legend>Sign Up Form</legend>
+
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" name="fullname" id="name" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="name@email.com">
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" name="pass" id="password">
+            </div>
+
+            <div class="form-row">
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" name="birthdate" id="birthdate" class="short-input">
+            </div>
+
+            <div class="form-row">
+                <label for="time">Time:</label>
+                <input type="time" name="time" id="time" class="short-input">
+            </div>
+
+            <div class="form-row">
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="CA">California</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="comments">Comments:</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label class="group-label">Gender:</label>
+                <div class="option-group">
+                    <label class="option-label"><input type="radio" name="gender" value="male"> Male</label>
+                    <label class="option-label"><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div> 
+
+            <div class="form-row">
+                <label class="group-label">Languages Known:</label>
+                <div class="option-group">
+                    <label class="option-label"><input type="checkbox" name="language" value="english"> English</label>
+                    <label class="option-label"><input type="checkbox" name="language" value="telugu"> Telugu</label>
+                    <label class="option-label"><input type="checkbox" name="language" value="hindi"> Hindi</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label for="skill">Proficiency:</label>
+                <input type="range" name="skill" id="skill" min="0" max="100" value="50">
+            </div>
+
+            <div class="checkbox-row">
+                <span class="spacer"></span>
+                <div class="option-group">
+                    <label class="option-label">
+                        <input type="checkbox" name="remember" value="yes" checked> Remember me?
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <span class="spacer"></span>
+                <input type="submit" value="Sign Up">
+            </div>
+
+        </fieldset>
+
+    </form>
+
+    <!-- ANSWERS SECTION -->
+    <section>
+        <h2>Answers</h2>
+
+        <p>1&rpar; The "action" attribute in the form tag tells where the form data will be sent after submission.</p>
+
+        <p>2&rpar; The "method" attribute tells how the form data is sent, usually using GET or POST.</p>
+
+        <p>3&rpar; GET sends data in the URL and is less secure, while POST sends data in the request body and is more secure.</p>
+
+        <p>4&rpar; Forms can be styled using CSS properties like colors, padding, spacing, and layout techniques.</p>
+
+        <p>5&rpar; Flexbox helps arrange elements in rows and can switch to column layout on smaller screens using media queries.</p>
+
+        <p>Date 5/25/2026</p>
+
+        <p>6&rpar; JavaScript is a programming language used to make websites interactive, and it was named “JavaScript” to take advantage of the popularity of Java, even though the two are different.</p>
+
+        <p>7&rpar; JavaScript can be run in two ways: in a web browser (client-side) and on a server using Node.js </p>
+
+        <p>8&rpar; The most popular front-end JavaScript library in the past was jQuery.</p>
+
+        <p>9&rpar; The most popular front-end JavaScript library today is React. </p>
+    </section>
+
+
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Israel Limma</p>
+</footer>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit',function(event) {
+        event.preventDefault();
+        //alert("Form Submitted");
+
+        const Name = document.getElementById('name').value;
+        const Email = document.getElementById('email').value; 
+        const Password = document.getElementById('password').value;
+        const DateofBirth = document.getElementById('birthdate').value;
+        const State = document.getElementById('state').value;
+        
+        
+
+
+        if (!Name || !Email) {
+            alert("You need a name and email.");
+            return;;
+    }
+
+   
+
+    const formData = {
+        Name: Name,
+        Email: Email,
+        Password: Password,
+        DateofBirth: DateofBirth,
+
+
+    };
+
+    console.log(formData);
+
+    });
+
+
+</script>
+
+</body>
+</html>

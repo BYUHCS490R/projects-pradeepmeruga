@@ -12,7 +12,7 @@
         <h1>Pradeep Web</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend> Sign Up</legend>
                     <div class="fore-row">
@@ -21,7 +21,7 @@
                     </div>
                     <div class="fore-row">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="pradeep@email.com">
+                        <input type="email" id="email" name="email" placeholder="@email.com">
                     </div>
                     <div class="fore-row">
                         <label for="password">Password:</label>
@@ -63,10 +63,52 @@
                 <li>Change colors, fonts, spacing, and borders to make it look clean and nice.</li>
                 <li>Flex arranges items properly and adjusts them for different screen sizes (row on desktop, column on mobile).</li>
             </ol>
+            <h2> Engagement - Form Processing with JavaScript</h2>
+            <ol>
+                <li>JavaScript is a programming language used to make websites interactive and dynamic.</li>
+                <li>It was named JavaScript for marketing to relate it to Java, even though they are different.</li>
+                <li>JavaScript can run in web browsers or on servers using Node.js</li>
+                <li>The most popular front-end library in the past was jQuery.</li>
+                <li>The most popular front-end library today is React.</li>
+            </ol>
     </main>
     <footer>
         <p>&copy; 2026 Pradeep Meruga</p>
     </footer>
+
+    <script>
+    document.getElementById('myForm').addEventListener('submit',function(event) {
+        event.preventDefault();
+        //alert("Form Submitted");
+
+        const Name = document.getElementById('name').value;
+        const Email = document.getElementById('email').value; 
+        const Password = document.getElementById('password').value;
+        const DateofBirth = document.getElementById('birthdate').value;
+        const State = document.getElementById('state').value;
+        
+        
+
+
+        if (!Name || !Email) {
+            alert("You need a name and email.");
+            return;;
+    }
+    const formData = {
+        Name: Name,
+        Email: Email,
+        Password: Password,
+        DateofBirth: DateofBirth,
+
+
+    };
+
+    console.log(formData);
+
+    });
+
+
+</script>
 
 </body>
 </html>
