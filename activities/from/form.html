@@ -14,19 +14,19 @@
     <main>
         <form action="processing.html" method="post" id="myForm">
             <fieldset>
-                <legend> Sign Up</legend>
-                    <div class="fore-row">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="fullname">
-                    </div>
-                    <div class="fore-row">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="@email.com">
-                    </div>
-                    <div class="fore-row">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password">
-                    </div>
+             <legend> Sign Up</legend>
+                <div class="fore-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="fullname">
+                </div>
+                <div class="fore-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="@email.com">
+                </div>
+                <div class="fore-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                 </div>
                     <div class="fore-row">
                         <label for="state">State:</label>
                         <select name="state" id="state">
@@ -77,36 +77,34 @@
     </footer>
 
     <script>
-    document.getElementById('myForm').addEventListener('submit',function(event) {
-        event.preventDefault();
-        //alert("Form Submitted");
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            //alert("Form Submitted");
 
-        const Name = document.getElementById('name').value;
-        const Email = document.getElementById('email').value; 
-        const Password = document.getElementById('password').value;
-        const State = document.getElementById('state').value;
+            const Name = document.getElementById('name').value;
+            const Email = document.getElementById('email').value; 
+            const Password = document.getElementById('password').value;
+            const State = document.getElementById('state').value;
+            
+            
+
+
+            if (!Name || !Email) {
+                alert("You need a name and email.");
+                return;;
+        }
+        const formData = {
+            Name: Name,
+            Email: Email,
+            Password: Password,
         
-        
 
+        };
 
-        if (!Name || !Email) {
-            alert("You need a name and email.");
-            return;;
-    }
-    const formData = {
-        Name: Name,
-        Email: Email,
-        Password: Password,
-    
+        console.log(formData);
 
-    };
-
-    console.log(formData);
-
-    });
-
-
-</script>
+        });
+    </script>
 
 </body>
 </html>
