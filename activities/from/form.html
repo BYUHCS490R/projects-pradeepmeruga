@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pradeep Web</title>
-    <link rel="stylesheet" href="form.css">
-    
+    <link rel="stylesheet" href="forms.css">   
 </head>
 <body>
     <header>
         <h1>Pradeep Web</h1>
-    </header>
+    </header> 
     <main>
         <form action="processing.html" method="post" id="myForm">
             <fieldset>
@@ -26,7 +25,7 @@
                 <div class="fore-row">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password">
-                 </div>
+                </div>
                     <div class="fore-row">
                         <label for="state">State:</label>
                         <select name="state" id="state">
@@ -71,40 +70,17 @@
                 <li>The most popular front-end library in the past was jQuery.</li>
                 <li>The most popular front-end library today is React.</li>
             </ol>
+            <h2> Engagement - Form Processing with AJAX</h2>
+            <ol>
+                <li>AJAX lets a webpage get data without refreshing.</li>
+                <li>To keep code neat and make the website faster.</li>
+            </ol>
     </main>
     <footer>
         <p>&copy; 2026 Pradeep Meruga</p>
     </footer>
 
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event) {
-            event.preventDefault();
-            //alert("Form Submitted");
-
-            const Name = document.getElementById('name').value;
-            const Email = document.getElementById('email').value; 
-            const Password = document.getElementById('password').value;
-            const State = document.getElementById('state').value;
-            
-            
-
-
-            if (!Name || !Email) {
-                alert("You need a name and email.");
-                return;;
-        }
-        const formData = {
-            Name: Name,
-            Email: Email,
-            Password: Password,
-        
-
-        };
-
-        console.log(formData);
-
-        });
-    </script>
+    <script src="form.js"></script>
 
 </body>
 </html>
