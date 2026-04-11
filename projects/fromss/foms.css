@@ -18,8 +18,6 @@ header {
 header h1 {
     margin: 0;
     background: linear-gradient(to right, #FF671F, #FFFFFF, #046A38);
-    webkit-background-clip: text;
-    webkit-text-fill-color: transparent;
     font-weight: 900;
 }
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration Form</title>
+    <link rel="stylesheet" href="foms.css">
+</head>
+<body>
+    <header>
+        <h1>Vehicle Registration Form</h1>
+        <p>Enter your vehicle details below</p>
+    </header>
+
+    <main>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Vehicle Information</legend>
+
+                <div class="form-row">
+                    <label for="owner">Owner Name:</label>
+                    <input type="text" id="owner" name="owner" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="name@email.com" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create password" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="808-123-4567">
+                </div>
+
+                <div class="form-row">
+                    <label for="purchase">Purchase Date:</label>
+                    <input type="date" id="purchase" name="purchase">
+                </div>
+
+                <div class="form-row">
+                    <label for="type">Vehicle Type:</label>
+                    <select name="type" id="type">
+                        <option value="">Select one</option>
+                        <option value="car">Car</option>
+                        <option value="bike">Bike</option>
+                        <option value="truck">Truck</option>
+                        <option value="suv">SUV</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label>Fuel Type:</label>
+                    <div class="option-group">
+                        <input type="radio" id="petrol" name="fuel" value="petrol">
+                        <label for="petrol">Petrol</label>
+
+                        <input type="radio" id="diesel" name="fuel" value="diesel">
+                        <label for="diesel">Diesel</label>
+
+                        <input type="radio" id="electric" name="fuel" value="electric">
+                        <label for="electric">Electric</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="details">Vehicle Details:</label>
+                    <textarea id="details" name="details" rows="4" cols="30" placeholder="Write vehicle model, color, or features"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="terms">Agreement:</label>
+                    <div class="option-group">
+                        <input type="checkbox" id="terms" name="terms" value="yes">
+                        <label for="terms">I confirm the information is correct</label>
+                    </div>
+                </div>
+
+                <div class="form-row submit-row">
+                    <span></span>
+                    <input type="submit" value="Submit Vehicle Form">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Vehicle Registration Page</p>
+    </footer>
+</body>
+</html>
