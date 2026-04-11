@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View a table of Straw Hat crew members with their roles, bounty values, and Devil Fruit information.">
+    <meta name="keywords" content="One Piece crew table, Straw Hat Pirates, bounty, crew members, Devil Fruit users">
+    <meta name="author" content="Pradeep Meruga">
+    <title>One Piece Fan Website - Fan Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>One Piece Fan Website</h1>
+    </header>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a href="arcs.html">Story Arcs</a>
+        <a href="devilfruits.html">Devil Fruits</a>
+        <a href="crewtable.html">Crew Table</a>
+        <a href="form.html" class="active">Fan Form</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Share Your Favorite One Piece Choices</h2>
+            <p> This form is for One Piece fans. You can share your favorite character, favorite story arc, and your thoughts about the series. </p>
+        </section>
+        <form id="fanForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+            <label for="character">Favorite Character</label>
+            <input type="text" id="character" name="character" autocomplete="off" required>
+
+            <label for="arc">Favorite Story Arc</label>
+            <select id="arc" name="arc" required>
+                <option value="">Select an arc</option>
+                <option value="East Blue">East Blue</option>
+                <option value="Alabasta">Alabasta</option>
+                <option value="Marineford">Marineford</option>
+                <option value="Wano">Wano</option>
+            </select>
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="5" autocomplete="off"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="successMessage" class="success-message">
+            <p>Your form was successfully processed. Thank you for sharing your favorite One Piece information.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Pradeep Meruga</p>
+    </footer>
+   <script src="form.js"></script>
+</body>
+</html>
